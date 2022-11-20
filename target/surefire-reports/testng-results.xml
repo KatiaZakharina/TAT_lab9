@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-20T23:20:23 MSK" name="test.GlistenCosmeticsTest" finished-at="2022-11-20T23:20:38 MSK" duration-ms="14993">
+    <groups>
+    </groups>
+    <test started-at="2022-11-20T23:20:23 MSK" name="Command line test" finished-at="2022-11-20T23:20:38 MSK" duration-ms="14993">
+      <class name="test.GlistenCosmeticsTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:test.GlistenCosmeticsTest@7f0eb4b4]" started-at="2022-11-20T23:20:23 MSK" name="browserSetup" finished-at="2022-11-20T23:20:26 MSK" duration-ms="2895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="testAddItemToCart()[pri:0, instance:test.GlistenCosmeticsTest@7f0eb4b4]" started-at="2022-11-20T23:20:26 MSK" name="testAddItemToCart" finished-at="2022-11-20T23:20:37 MSK" duration-ms="11095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddItemToCart -->
+        <test-method is-config="true" signature="browserTearDown()[pri:0, instance:test.GlistenCosmeticsTest@7f0eb4b4]" started-at="2022-11-20T23:20:37 MSK" name="browserTearDown" finished-at="2022-11-20T23:20:38 MSK" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- test.GlistenCosmeticsTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- test.GlistenCosmeticsTest -->
+</testng-results>
