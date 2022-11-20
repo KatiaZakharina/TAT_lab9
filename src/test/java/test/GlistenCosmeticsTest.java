@@ -27,7 +27,6 @@ public class GlistenCosmeticsTest {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
-
 	@Test
 	public void testAddItemToCart() {
 		String EXPECTED_AMOUNT = "1";
@@ -43,6 +42,25 @@ public class GlistenCosmeticsTest {
 		wait.until(ExpectedConditions.textToBePresentInElement(cartCounter, EXPECTED_AMOUNT));
 
 		Assert.assertEquals(cartCounter.getText(), EXPECTED_AMOUNT);
+	}
+
+	@Test
+	public void testEmptySearchResult() {
+		String SEARCH_QUERY = "abcdef";
+		String RESULT_INFO =  String.format("Your search for \"%s\" did not yield any results.", SEARCH_QUERY);;
+
+		driver.get("https://www.glistencosmetics.com/");
+
+		WebElement searchBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@name='q']")));
+		searchBox.sendKeys(SEARCH_QUERY);
+
+		WebElement buttonSearch = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@class='search-bar__submit']")));
+		buttonSearch.click();
+
+		WebElement searchResult = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[@class='h2 small--text-center']")));
+		wait.until(ExpectedConditions.visibilityOf(searchResult));
+
+		Assert.assertEquals(searchResult.getText(), RESULT_INFO);
 	}
 
 
