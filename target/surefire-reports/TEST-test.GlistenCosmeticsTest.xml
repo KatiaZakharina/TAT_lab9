@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="test.GlistenCosmeticsTest" time="20.068" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="test.GlistenCosmeticsTest" time="18.53" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11+28"/>
@@ -65,6 +65,44 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.GlistenCosmeticsTest" name="testAddItemToCart" time="12.357"/>
-  <testcase classname="test.GlistenCosmeticsTest" name="testEmptySearchResult" time="7.711"/>
+  <testcase classname="test.GlistenCosmeticsTest" name="testAddItemToCart" time="11.689"/>
+  <testcase classname="test.GlistenCosmeticsTest" name="testEmptySearchResult" time="6.841">
+    <failure message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;search-bar__submit&quot;&gt;...&lt;/button&gt; is not clickable at point (46, 78). Other element would receive the click: &lt;div class=&quot;recommendation-modal__backdrop&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=107.0.5304.107)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91c701ad7d62bd18310c2835d3a81fcb, clickElement {id=4e26cf52-2e95-45c0-8ceb-bf8bc9d7f5a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\katia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58163/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (91c701ad7d62bd18310c2835d3a81fcb)] -&gt; xpath: //button[@class=&apos;search-bar__submit&apos;]]
+Session ID: 91c701ad7d62bd18310c2835d3a81fcb" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;search-bar__submit&quot;&gt;...&lt;/button&gt; is not clickable at point (46, 78). Other element would receive the click: &lt;div class=&quot;recommendation-modal__backdrop&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=107.0.5304.107)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [91c701ad7d62bd18310c2835d3a81fcb, clickElement {id=4e26cf52-2e95-45c0-8ceb-bf8bc9d7f5a9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\katia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58163/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (91c701ad7d62bd18310c2835d3a81fcb)] -&gt; xpath: //button[@class=&apos;search-bar__submit&apos;]]
+Session ID: 91c701ad7d62bd18310c2835d3a81fcb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at test.GlistenCosmeticsTest.testEmptySearchResult(GlistenCosmeticsTest.java:58)
+</failure>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 2748
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
 </testsuite>
