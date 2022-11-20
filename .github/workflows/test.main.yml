@@ -8,7 +8,7 @@ jobs:
 
   test:
     name: Examples Selenium Test
-    runs-on: ubuntu-18.04
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v1
@@ -17,9 +17,4 @@ jobs:
         with:
           java-version: 1.11
       - name: Maven Test
-        run: mvn clean test -Dtest=*Test
-      - name: Archive Report of Tests
-        uses: actions/upload-artifact@v2
-        with:
-          name: report-test
-          path: target/report/test_execution.html
+        run: mvn clean test
